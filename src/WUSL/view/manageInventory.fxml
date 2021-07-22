@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemId" prefHeight="386.0" prefWidth="600.0" style="-fx-background-image: url('WUSL/images/manageinv.png');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WUSL.controller.manageInventoryController">
+   <children>
+      <Button layoutX="33.0" layoutY="28.0" mnemonicParsing="false" onAction="#clickNewItem" style="-fx-background-color: #C15B78;" text="New Item">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="516.0" layoutY="28.0" mnemonicParsing="false" onAction="#ItemHome" style="-fx-background-color: #189AB4;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="39.0" layoutY="77.0" text="Code">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="117.0" text="Description">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="148.0" text="Unit Price">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="183.0" text="Quantity">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="itemCode" layoutX="121.0" layoutY="73.0" prefHeight="25.0" prefWidth="401.0" />
+      <TextField fx:id="itemDes" layoutX="121.0" layoutY="113.0" prefHeight="25.0" prefWidth="401.0" />
+      <TextField fx:id="itemPrice" layoutX="121.0" layoutY="153.0" prefHeight="25.0" prefWidth="401.0" />
+      <TextField fx:id="ItemQty" layoutX="121.0" layoutY="188.0" prefHeight="25.0" prefWidth="401.0" />
+      <Button layoutX="213.0" layoutY="230.0" mnemonicParsing="false" onAction="#itemSave" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #C15B78;" text="Save">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="329.0" layoutY="230.0" mnemonicParsing="false" onAction="#itemDelete" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #C15B78;" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="itemTable" layoutX="13.0" layoutY="261.0" prefHeight="122.0" prefWidth="576.0">
+        <columns>
+          <TableColumn prefWidth="154.0" text="Code" />
+          <TableColumn prefWidth="145.0" text="Description" />
+            <TableColumn prefWidth="134.0" text="Unit Price" />
+            <TableColumn prefWidth="142.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button layoutX="442.0" layoutY="230.0" mnemonicParsing="false" onAction="#genItemReport" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #C15B78;" text="Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="94.0" layoutY="230.0" mnemonicParsing="false" onAction="#itemSearch" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #C15B78;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

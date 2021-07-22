@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageCus" prefHeight="627.0" prefWidth="600.0" style="-fx-background-image: url('WUSL/images/main1.png');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WUSL.controller.mainPageController">
+   <children>
+      <Label layoutX="95.0" layoutY="111.0" prefHeight="77.0" prefWidth="417.0" text="Point Of Sales (POS)">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="64.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="mCus" fitHeight="83.0" fitWidth="84.0" layoutX="38.0" layoutY="252.0" onMouseClicked="#clickCus" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Conference_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mInven" fitHeight="83.0" fitWidth="83.0" layoutX="175.0" layoutY="252.0" onMouseClicked="#clickInven" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Shop_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="342.0" text="Manage Customer">
+         <font>
+            <Font name="Lucida Fax Demibold" size="11.0" />
+         </font></Label>
+      <ImageView fx:id="mOrder" fitHeight="83.0" fitWidth="84.0" layoutX="295.0" layoutY="252.0" onMouseClicked="#clickOrder" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Buying_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="303.0" layoutY="342.0" text="Place Order">
+         <font>
+            <Font name="Lucida Fax Demibold" size="11.0" />
+         </font></Label>
+      <ImageView fx:id="mViewO" fitHeight="71.0" fitWidth="83.0" layoutX="399.0" layoutY="248.0" onMouseClicked="#clickViewOrder" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Bill_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="402.0" layoutY="342.0" text="View Order">
+         <font>
+            <Font name="Lucida Fax Demibold" size="11.0" />
+         </font></Label>
+      <Label layoutX="507.0" layoutY="342.0" text="Settings">
+         <font>
+            <Font name="Lucida Fax Demibold" size="11.0" />
+         </font></Label>
+      <ImageView fx:id="mSettings" fitHeight="83.0" fitWidth="84.0" layoutX="489.0" layoutY="242.0" onMouseClicked="#clickServices" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Services_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="342.0" text="Manage Inventory">
+         <font>
+            <Font name="Lucida Fax Demibold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
